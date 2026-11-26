@@ -1,0 +1,24 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object qs; }
+dimensions [1 0 -3 0 0 0 0]; internalField uniform 0;
+boundaryField {
+asphalt { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.12; qso uniform 0; value uniform 0; }
+soil { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.2; qso uniform 0; value uniform 0; }
+walkway { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.4; qso uniform 0; value uniform 0; }
+nearBank { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.08; qso uniform 0; value uniform 0; }
+mainWater { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.08; qso uniform 0; value uniform 0; }
+eastPaving { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.4; qso uniform 0; value uniform 0; }
+bottom { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.2; qso uniform 0; value uniform 0; }
+bankWest { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.12; qso uniform 0; value uniform 0; }
+bankEast { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.12; qso uniform 0; value uniform 0; }
+bankSouth { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.12; qso uniform 0; value uniform 0; }
+bankNorth { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.12; qso uniform 0; value uniform 0; }
+grassEast { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.2; qso uniform 0; value uniform 0; }
+buildings { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.12; qso uniform 0; value uniform 0; }
+rearPaving { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.4; qso uniform 0; value uniform 0; }
+east { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0; qso uniform 0; value uniform 0; }
+west { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0; qso uniform 0; value uniform 0; }
+south { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0; qso uniform 0; value uniform 0; }
+north { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0; qso uniform 0; value uniform 0; }
+top { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0; qso uniform 0; value uniform 0; }
+air_to_vegetation { type solarLoadRadiationViewFactor; albedoMode lookup; albedo uniform 0.15; qso uniform 0; value uniform 0; }
+}

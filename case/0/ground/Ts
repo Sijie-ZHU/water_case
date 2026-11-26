@@ -1,0 +1,14 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object Ts; }
+dimensions [0 0 0 1 0 0 0]; internalField uniform 301;
+boundaryField {
+asphalt { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+soil { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+walkway { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+eastPaving { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+grassEast { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+rearPaving { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+bankWest { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+bankEast { type compressible::CFDHAMsolidTemperatureCoupledMixed; qrNbr qr; qsNbr qs; value uniform 301; }
+interior { type fixedValue; value uniform 293.2; }
+solidSides { type zeroGradient; }
+}

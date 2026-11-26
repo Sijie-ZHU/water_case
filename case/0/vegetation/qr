@@ -1,0 +1,24 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object qr; }
+dimensions [1 0 -3 0 0 0 0]; internalField uniform 0;
+boundaryField {
+asphalt { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+soil { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+walkway { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+nearBank { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.97; qro uniform 0; value uniform 0; }
+mainWater { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.97; qro uniform 0; value uniform 0; }
+eastPaving { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+bottom { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+bankWest { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+bankEast { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+bankSouth { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+bankNorth { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+grassEast { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+buildings { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+rearPaving { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+east { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 1; qro uniform 0; value uniform 0; }
+west { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 1; qro uniform 0; value uniform 0; }
+south { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 1; qro uniform 0; value uniform 0; }
+north { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 1; qro uniform 0; value uniform 0; }
+top { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 1; qro uniform 0; value uniform 0; }
+air_to_vegetation { type greyDiffusiveRadiationViewFactor; emissivityMode lookup; emissivity uniform 0.9; qro uniform 0; value uniform 0; }
+}

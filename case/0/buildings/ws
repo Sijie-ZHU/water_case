@@ -1,0 +1,7 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object ws; }
+dimensions [1 -3 0 0 0 0 0]; internalField uniform 2.5;
+boundaryField {
+buildings { type zeroGradient; }
+interior { type zeroGradient; }
+sides { type zeroGradient; }
+}

@@ -1,0 +1,20 @@
+FoamFile { version 2.0; format ascii; class dictionary; object controlDict; }
+application urbanMicroclimateFoamRiverMPI;
+startFrom startTime; startTime 0; stopAt endTime; endTime 64800; deltaT 3600;
+writeControl timeStep; writeInterval 1; writeFormat ascii; writePrecision 12; writeCompression off;
+timeFormat general; timePrecision 12; runTimeModifiable false;
+minFluidIteration 25; maxFluidIteration 2000; blending true; synchroniseRadiationAtPhysicalTime true;
+initialSolidTimestepFactor 0.02; maxDeltaT 60; minDeltaT 1e-5; nInternalIterMax 30;
+PicardToleranceTs 0.001; PicardTolerancews 0.001; pcEqnForm pc-based;
+functions {} libs ("libwaterModelWaterIter.so" "libsolarLoad.so");
+
+absoluteFieldStop true;
+absoluteTTolerance 0.001;
+absoluteWTolerance 1e-08;
+absoluteUTolerance 0.005;
+absolutePTolerance 0.01;
+absoluteLeafTolerance 0.001;
+
+blendingCoeffs { dampingThickness 15; alphaCoeffU 0.3; alphaCoeffT 0.1; }
+
+auditSolidInterfaces true;

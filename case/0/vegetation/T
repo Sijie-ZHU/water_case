@@ -1,0 +1,24 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object T; }
+dimensions [0 0 0 1 0 0 0]; internalField uniform 301;
+boundaryField {
+asphalt { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+soil { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+walkway { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+nearBank { type fixedValue; value uniform 301.15; }
+mainWater { type fixedValue; value uniform 301.15; }
+eastPaving { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+bottom { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+bankWest { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+bankEast { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+bankSouth { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+bankNorth { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+grassEast { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+buildings { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+rearPaving { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+east { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+west { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+south { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+north { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+top { type mapped; field T; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+air_to_vegetation { type mappedLeafTemperature; field Tl; setAverage false; average 0; interpolationScheme cell; value uniform 301; }
+}

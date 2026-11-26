@@ -1,0 +1,23 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object p; }
+dimensions [1 -1 -2 0 0 0 0]; internalField uniform 100000;
+boundaryField {
+asphalt { type calculated; value uniform 100000; }
+soil { type calculated; value uniform 100000; }
+walkway { type calculated; value uniform 100000; }
+nearBank { type calculated; value uniform 100000; }
+mainWater { type calculated; value uniform 100000; }
+eastPaving { type calculated; value uniform 100000; }
+bottom { type calculated; value uniform 100000; }
+bankWest { type calculated; value uniform 100000; }
+bankEast { type calculated; value uniform 100000; }
+bankSouth { type calculated; value uniform 100000; }
+bankNorth { type calculated; value uniform 100000; }
+grassEast { type calculated; value uniform 100000; }
+buildings { type calculated; value uniform 100000; }
+rearPaving { type calculated; value uniform 100000; }
+east { type calculated; value uniform 100000; }
+west { type calculated; value uniform 100000; }
+south { type calculated; value uniform 100000; }
+north { type calculated; value uniform 100000; }
+top { type calculated; value uniform 100000; }
+}

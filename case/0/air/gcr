@@ -1,0 +1,23 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object gcr; }
+dimensions [0 0 0 0 0 0 0]; internalField uniform 0;
+boundaryField {
+asphalt { type zeroGradient; }
+soil { type zeroGradient; }
+walkway { type zeroGradient; }
+nearBank { type zeroGradient; }
+mainWater { type zeroGradient; }
+eastPaving { type zeroGradient; }
+bottom { type zeroGradient; }
+bankWest { type zeroGradient; }
+bankEast { type zeroGradient; }
+bankSouth { type zeroGradient; }
+bankNorth { type zeroGradient; }
+grassEast { type zeroGradient; }
+buildings { type zeroGradient; }
+rearPaving { type zeroGradient; }
+east { type zeroGradient; }
+west { type zeroGradient; }
+south { type zeroGradient; }
+north { type zeroGradient; }
+top { type zeroGradient; }
+}

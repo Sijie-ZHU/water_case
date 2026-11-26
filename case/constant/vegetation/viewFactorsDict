@@ -1,0 +1,22 @@
+FoamFile { version 2.0; format ascii; class dictionary; object viewFactorsDict; }
+writeFacesAgglomeration true; writeViewFactorMatrix true; debug 0; dumpRays false; maxDynListLength 10000000; skyPosVector (0 0 1);
+asphalt { nFacesInCoarsestLevel 20; featureAngle 10; }
+soil { nFacesInCoarsestLevel 20; featureAngle 10; }
+walkway { nFacesInCoarsestLevel 50; featureAngle 10; }
+nearBank { nFacesInCoarsestLevel 50; featureAngle 10; }
+mainWater { nFacesInCoarsestLevel 20; featureAngle 10; }
+eastPaving { nFacesInCoarsestLevel 20; featureAngle 10; }
+bottom { nFacesInCoarsestLevel 20; featureAngle 10; }
+bankWest { nFacesInCoarsestLevel 20; featureAngle 10; }
+bankEast { nFacesInCoarsestLevel 20; featureAngle 10; }
+bankSouth { nFacesInCoarsestLevel 20; featureAngle 10; }
+bankNorth { nFacesInCoarsestLevel 20; featureAngle 10; }
+grassEast { nFacesInCoarsestLevel 20; featureAngle 10; }
+buildings { nFacesInCoarsestLevel 20; featureAngle 10; }
+rearPaving { nFacesInCoarsestLevel 20; featureAngle 10; }
+east { nFacesInCoarsestLevel 20; featureAngle 10; }
+west { nFacesInCoarsestLevel 20; featureAngle 10; }
+south { nFacesInCoarsestLevel 20; featureAngle 10; }
+north { nFacesInCoarsestLevel 20; featureAngle 10; }
+top { nFacesInCoarsestLevel 20; featureAngle 10; }
+air_to_vegetation { nFacesInCoarsestLevel 50; featureAngle 10; }

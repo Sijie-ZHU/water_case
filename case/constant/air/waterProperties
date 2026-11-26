@@ -1,0 +1,12 @@
+FoamFile { version 2.0; format ascii; class dictionary; object waterProperties; }
+waterModel simpleWater; water true; simpleWaterCoeffs { waterPatches (nearBank mainWater); evaporation true; allowCondensation true;
+resistanceMode constant; rInterface [0 -1 1 0 0 0 0] 50; latentHeat [0 2 -2 0 0 0 0] 2.45e6; reportFluxes true;
+temperatureModel layered1D; thermalCoeffs { couplingMode waterPicard; maxCouplingIter 100; TsurfaceTolerance 1e-5; energyTolerance 0.1; underRelaxation 0.8; zones {nearBank { patches (nearBank); waterDepth 1.5; nLayers 12; initialTemperature 301.15; radiationRegion vegetation;
+rhoWater 998; cpWater 4180; thermalConductivity 0.6; turbulentDiffusivity 1e-5; convectiveAdjustment true; maxSubstep 60;
+shortwaveMode patchNetAbsorbed; longwaveMode patchNet; shortwaveExtinction 1; surfaceAbsorptionFraction 0.35;
+bottomMode lumpedSediment; bedTemperature 301.15; bedConductance 5; bedHeatCapacity 2e6; bedAbsorptivity 1; advectiveFlux constant 0; }
+mainWater { patches (mainWater); waterDepth 1.5; nLayers 12; initialTemperature 301.15; radiationRegion vegetation;
+rhoWater 998; cpWater 4180; thermalConductivity 0.6; turbulentDiffusivity 1e-5; convectiveAdjustment true; maxSubstep 60;
+shortwaveMode patchNetAbsorbed; longwaveMode patchNet; shortwaveExtinction 1; surfaceAbsorptionFraction 0.35;
+bottomMode lumpedSediment; bedTemperature 301.15; bedConductance 5; bedHeatCapacity 2e6; bedAbsorptivity 1; advectiveFlux constant 0; }
+} } }

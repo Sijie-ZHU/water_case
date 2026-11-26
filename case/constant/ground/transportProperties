@@ -1,0 +1,46 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+buildingMaterials
+(  
+    {
+        name    soil;
+        buildingMaterialModel Soil;
+	    rho     1600;
+    	cap     1200;
+		lambda1	0.8;	//lambda = lambda1 + ws*lambda2
+		lambda2	0;
+    }  	
+    {
+        name    concrete;
+        buildingMaterialModel HamstadConcrete;
+	    rho     2400;
+    	cap     900;
+		lambda1	1.5;	//lambda = lambda1 + ws*lambda2
+		lambda2	0;
+    }
+    {
+        name    asphalt;
+        buildingMaterialModel AsphaltConcrete;
+	    rho     2200;
+    	cap     1000;
+		lambda1	0.9;	//lambda = lambda1 + ws*lambda2
+		lambda2	0;
+    }  	 	
+);
+
+// ************************************************************************* //

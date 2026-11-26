@@ -1,9 +1,0 @@
-FoamFile { version 2.0; format ascii; class volScalarField; object w; }
-dimensions [0 0 0 0 0 0 0];
-internalField uniform 0.005;
-boundaryField {
-waterSurface { type waterHumidityFlux; value uniform 0.005; }
-waterSurfaceB { type waterHumidityFlux; value uniform 0.005; }
-top { type fixedValue; value uniform 0.005; }
-sides { type symmetry; }
-}

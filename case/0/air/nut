@@ -1,0 +1,23 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object nut; }
+dimensions [0 2 -1 0 0 0 0]; internalField uniform 0.05;
+boundaryField {
+asphalt { type nutkAtmRoughWallFunction; z0 uniform 0.3; value uniform 0; }
+soil { type nutkWallFunction; value uniform 0; }
+walkway { type nutkWallFunction; value uniform 0; }
+nearBank { type nutkWallFunction; value uniform 0; }
+mainWater { type nutkWallFunction; value uniform 0; }
+eastPaving { type nutkWallFunction; value uniform 0; }
+bottom { type nutkAtmRoughWallFunction; z0 uniform 0.3; value uniform 0; }
+bankWest { type nutkWallFunction; value uniform 0; }
+bankEast { type nutkWallFunction; value uniform 0; }
+bankSouth { type nutkWallFunction; value uniform 0; }
+bankNorth { type nutkWallFunction; value uniform 0; }
+grassEast { type nutkWallFunction; value uniform 0; }
+buildings { type nutkWallFunction; value uniform 0; }
+rearPaving { type nutkWallFunction; value uniform 0; }
+east { type calculated; value uniform 0.05; }
+west { type calculated; value uniform 0.05; }
+south { type calculated; value uniform 0.05; }
+north { type calculated; value uniform 0.05; }
+top { type zeroGradient; }
+}

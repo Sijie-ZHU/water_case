@@ -1,0 +1,23 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object p_rgh; }
+dimensions [1 -1 -2 0 0 0 0]; internalField uniform 100000;
+boundaryField {
+asphalt { type fixedFluxPressure; value uniform 100000; }
+soil { type fixedFluxPressure; value uniform 100000; }
+walkway { type fixedFluxPressure; value uniform 100000; }
+nearBank { type fixedFluxPressure; value uniform 100000; }
+mainWater { type fixedFluxPressure; value uniform 100000; }
+eastPaving { type fixedFluxPressure; value uniform 100000; }
+bottom { type fixedFluxPressure; value uniform 100000; }
+bankWest { type fixedFluxPressure; value uniform 100000; }
+bankEast { type fixedFluxPressure; value uniform 100000; }
+bankSouth { type fixedFluxPressure; value uniform 100000; }
+bankNorth { type fixedFluxPressure; value uniform 100000; }
+grassEast { type fixedFluxPressure; value uniform 100000; }
+buildings { type fixedFluxPressure; value uniform 100000; }
+rearPaving { type fixedFluxPressure; value uniform 100000; }
+east { type fixedFluxPressure; value uniform 100000; }
+west { type fixedFluxPressure; value uniform 100000; }
+south { type fixedFluxPressure; value uniform 100000; }
+north { type fixedFluxPressure; value uniform 100000; }
+top { type fixedValue; value uniform 100000; }
+}

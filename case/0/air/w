@@ -1,0 +1,23 @@
+FoamFile { version 2.0; format ascii; class volScalarField; object w; }
+dimensions [0 0 0 0 0 0 0]; internalField uniform 0.017226388;
+boundaryField {
+asphalt { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+soil { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+walkway { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+nearBank { type waterHumidityFlux; value uniform 0.017226388; }
+mainWater { type waterHumidityFlux; value uniform 0.017226388; }
+eastPaving { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+bottom { type zeroGradient; }
+bankWest { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+bankEast { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+bankSouth { type zeroGradient; }
+bankNorth { type zeroGradient; }
+grassEast { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+buildings { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform .017226388; }
+rearPaving { type compressible::CFDHAMfluidMoistureCoupledImpermeable; value uniform 0.017226388; }
+east { type uniformFixedValue; uniformValue tableFile; uniformValueCoeffs { file "$FOAM_CASE/0/air/wambient"; } value uniform 0.017226388; }
+west { type uniformFixedValue; uniformValue tableFile; uniformValueCoeffs { file "$FOAM_CASE/0/air/wambient"; } value uniform 0.017226388; }
+south { type uniformFixedValue; uniformValue tableFile; uniformValueCoeffs { file "$FOAM_CASE/0/air/wambient"; } value uniform 0.017226388; }
+north { type uniformFixedValue; uniformValue tableFile; uniformValueCoeffs { file "$FOAM_CASE/0/air/wambient"; } value uniform 0.017226388; }
+top { type zeroGradient; }
+}
