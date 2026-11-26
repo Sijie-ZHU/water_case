@@ -1,0 +1,11 @@
+FoamFile { version 2.0; format ascii; class dictionary; object waterProperties; }
+waterModel simpleWater; water true;
+simpleWaterCoeffs { waterPatches (waterSurface waterSurfaceB); evaporation true; allowCondensation true;
+resistanceMode constant; rInterface [0 -1 1 0 0 0 0] 50; latentHeat [0 2 -2 0 0 0 0] 2.45e6; reportFluxes true;
+temperatureModel layered1D; thermalCoeffs { couplingMode waterPicard; maxCouplingIter 80; TsurfaceTolerance 1e-7; energyTolerance 1e-4; underRelaxation 0.6;
+zones { pond { patches (waterSurface waterSurfaceB); waterDepth 1; nLayers 6; initialTemperature 300;
+       rhoWater 1000; cpWater 4180; turbulentDiffusivity 1e-5; maxSubstep 60;
+       shortwaveExtinction 1; surfaceAbsorptionFraction 0.1; bottomMode lumpedSediment;
+       bedTemperature 295; bedConductance 10; bedHeatCapacity 2e6;
+       shortwaveMode netAbsorbed; shortwave constant 200; longwaveMode downwelling; longwave constant 350; emissivity 0.97;
+    } } } }
