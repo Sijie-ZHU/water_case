@@ -6,7 +6,7 @@
 
 ## 解包并运行
 
-先按课程发放的源码包编译OpenFOAM Foundation 8版求解器urbanMicroclimateFoamRiverMPI。下面的前两行请换成本机安装路径。从克隆的仓库根目录，在Linux或WSL终端运行：
+先按源码包编译OpenFOAM Foundation 8版求解器urbanMicroclimateFoamRiverMPI。下面的前两行请换成本机安装路径。从克隆的仓库根目录，在Linux或WSL终端运行：
 
 ```bash
 source /opt/openfoam8/etc/bashrc
